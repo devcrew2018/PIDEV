@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" opacity="0.93" prefHeight="478.0" prefWidth="772.0" style="-fx-background-color: #272726;" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="workshop.ui.CombFXMLController">
+   <children>
+      <ImageView fitHeight="121.0" fitWidth="152.0" opacity="0.81" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@adfitneess.png" />
+         </image>
+      </ImageView>
+      <TableView fx:id="tabres" layoutX="14.0" layoutY="114.0" prefHeight="350.0" prefWidth="747.0">
+         <columns>
+            <TableColumn fx:id="aaa" prefWidth="165.33334350585938" text="Evènement" />
+            <TableColumn fx:id="bbb" prefWidth="180.66665649414062" text="Participant" />
+            <TableColumn fx:id="ccc" prefWidth="175.0" text="E-mail" />
+            <TableColumn fx:id="ddd" prefWidth="185.0" text="Numéro de téléphone" />
+         </columns>
+      </TableView>
+      <Label layoutX="73.0" layoutY="14.0" text="Voir liste des Participants pour chaque évènement">
+         <font>
+            <Font size="20.0" />
+         </font>
+         <textFill>
+            <LinearGradient endX="0.03809523809523807" endY="0.9111111095973423" startX="0.9587302571251279" startY="0.42539687383742564">
+               <stops>
+                  <Stop color="#ae833e" />
+                  <Stop color="WHITE" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </textFill>
+      </Label>
+      <Label layoutX="104.0" layoutY="33.0" prefHeight="22.0" prefWidth="231.0" text="Veuillez voir le table ci_dessous" textFill="#e5ab4e" />
+   </children>
+</AnchorPane>
